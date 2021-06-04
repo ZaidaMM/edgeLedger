@@ -282,10 +282,11 @@ img {
   padding: 10px 10px 10px 5px;
   margin: 10px 0;
 }
-#contact .form input[type="submit"] {
+#contact .form button {
   width: 100%;
   border: none;
   text-align: center;
+  cursor: pointer;
 }
 /* Blog */
 
