@@ -273,16 +273,16 @@ img {
 #contact .contact-form {
   color: var(--dark-color);
 }
-#contact .form {
+#contact form {
   width: 100%;
 }
-#contact .form input {
+#contact form input {
   width: 100%;
   border: none;
   padding: 10px 10px 10px 5px;
   margin: 10px 0;
 }
-#contact .form button {
+#contact form button {
   width: 100%;
   border: none;
   text-align: center;
