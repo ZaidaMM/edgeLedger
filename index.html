@@ -250,13 +250,15 @@
           <div class="column">
             <div class="column-2 bg-light contact-form">
               <h2>Request Callback</h2>
-              <input type="text" placeholder="Enter name" />
-              <br />
-              <input type="email" placeholder="Enter email" />
-              <br />
-              <input type="number" placeholder="Enter phone" />
-              <br />
-              <a class="btn btn-primary btn-border" href="#"> Read More</a>
+              <form name="contact" method="POST" data-netlify="true">
+                <input type="text" name="name" placeholder="Enter name" />
+                <br />
+                <input type="email" name="email" placeholder="Enter email" />
+                <br />
+                <input type="number" name="phone" placeholder="Enter phone" />
+                <br />
+                <a class="btn btn-primary btn-border" href="#"> Read More</a>
+              </form>
             </div>
           </div>
         </div>
