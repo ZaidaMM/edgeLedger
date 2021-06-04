@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <title>Edge Ledger | Blog Post One</title>
+  </head>
+  <body>
+    <header id="home" class="hero blog">
+      <div id="navbar" class="nav top">
+        <div class="nav-logo">
+          <span><i class="fas fa-book-open"></i> Edge</span>Ledger
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#cases">Cases</a></li>
+            <li class="current"><a href="/index.html#blog">Blog</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="showcase">
+        <div class="showcase-content">
+          <h1 class="light-title">Blog</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="blog-post section-padding">
+        <div class="blog-header">
+          <h2>Blog Post One</h2>
+          <p>
+            <i class="fas fa-user"></i>
+            Posted by <strong>John Doe</strong> |
+            <time datetime="June 2 2021">June 2 2021</time>
+          </p>
+        </div>
+
+        <div class="blog-content">
+          <img src="/images/blog/blog1.jpg" alt="blog photo" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
+          aspernatur repellendus est cupiditate iusto, error temporibus maiores
+          minus facilis blanditiis quam doloribus quas! Enim eveniet quo commodi
+          neque ullam velit!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex
+          asperiores est distinctio debitis. Dolores maiores aliquam nobis
+          reiciendis perspiciatis reprehenderit, earum laudantium! Excepturi
+          nisi laudantium provident praesentium iste dolorum, similique, eos,
+          quisquam inventore minus vitae? Saepe non commodi ullam et velit amet
+          quos, modi autem vero facere eveniet voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          reiciendis inventore veniam impedit, fuga dolore ab, ea deleniti
+          dignissimos quis quas natus voluptatem quae porro distinctio aut
+          facere corrupti quisquam et consequuntur eius, dolorum saepe esse.
+          Possimus incidunt sunt cumque.
+        </p>
+      </div>
+    </main>
+    <footer id="footer" class="bg-dark">
+      <div>
+        <i class="fab fa-facebook fa-2x"></i>
+        <i class="fab fa-twitter fa-2x"></i>
+        <i class="fab fa-youtube fa-2x"></i>
+        <i class="fab fa-linkedin fa-2x"></i>
+      </div>
+      <p>Copyright &copy; 2021 - EdgeLedger</p>
+    </footer>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
