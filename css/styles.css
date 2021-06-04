@@ -273,12 +273,16 @@ img {
 #contact .contact-form {
   color: var(--dark-color);
 }
-#contact .contact-form input {
+#contact .form {
+  width: 100%;
+}
+#contact .form input {
   width: 100%;
   border: none;
   padding: 10px 10px 10px 5px;
+  margin: 10px 0;
 }
-#contact .contact-form a {
+#contact .form input[type="submit"] {
   width: 100%;
   border: none;
   text-align: center;
